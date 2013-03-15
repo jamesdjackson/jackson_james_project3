@@ -112,6 +112,7 @@ window.addEventListener("DOMContentLoaded", function () {
             var obj = JSON.parse(value);
             var makeSublist = document.createElement("ul");
             makeli.appendChild(makeSublist);
+            getPicture(obj.group[1], makeSublist);
             for (var n in obj) {
                 var makeSubli = document.createElement("li");
                 makeSublist.appendChild(makeSubli);
@@ -121,6 +122,15 @@ window.addEventListener("DOMContentLoaded", function () {
             }
             linkTogether(localStorage.key(i), linksLi);
         }
+    }
+//Get image for the right category
+
+    function getPicture(printGroups,makeSublist){
+        var imageLi = document.createElement('li');
+        makeSublist.appendChild(imageLi);
+        var newImg = document.createElement('img');
+        var setSrc = newImg.setAttribute("src", "images/"+ printGroups + ".png");
+        imageLi.appendChild(newImg);
     }
 
     function automagicRecords () {

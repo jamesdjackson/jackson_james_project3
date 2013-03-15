@@ -33,7 +33,7 @@ nav {
 }
 
 h1 {
-    background-image: url('sc170739.jpg');
+    background-image: url(Images/sc170739.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
@@ -84,7 +84,6 @@ div {
     font-size: 28;
 }
 .switch {
-
     height: 28px;
     width: 77px;
     border: 1px solid #979797;
@@ -93,11 +92,9 @@ div {
     box-shadow: inset 0 1px 3px #BABABA, inset 0 12px 3px 2px rgba(232, 232, 232, 0.5);
     cursor: pointer;
     overflow: hidden;
-
 }
 
 .switch::before {
-
     content: "";
     display: block;
     height: 28px;
@@ -106,14 +103,34 @@ div {
     border-radius: 20px;
     box-shadow: inset 0 1px 2px #0063B7, inset 0 12px 3px 2px rgba(0, 127, 234, 0.5);
     background-color: #64B1F2;
-
 }
 
 .switch.on::before {
-
     width: 77px;
-
 }
 
+div.one {
+    background-image: url(Images/Flowers.png);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    width: 80px;
+    height: 80px;
+}
+
+div.two {
+    background-image: url(Images/Flowers.png);
+    background-position: -80px 0;
+    background-repeat: no-repeat;
+    width: 80px;
+    height: 80px;
+}
+
+div.three {
+    background-image: url(Images/Flowers.png);
+    background-position: -160px 0;
+    background-repeat: no-repeat;
+    width: 80px;
+    height: 80px;
+}
 
 
