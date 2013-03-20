@@ -19,7 +19,7 @@
     <a href="#" id="displayLink">Display Data</a>
     <a href="additem.html" id="addNew" style="display: none;">Add New Data</a>
 </nav>
-<form action="#" method="post" id="printForm" > <!--start of the form-->
+<form action="#" method="post" id="printForm">
     <fieldset id="printFieldset">
         <legend id="add">Add an Japanese Print:</legend>
         <span>* fields are required.</span>
@@ -33,7 +33,7 @@
         <br>
         <label for="approxDateOfPrint">Approximate Date of Printing:</label><input type="range" name="approxDateOfPrint" id="approxDateOfPrint" min="1700" max="2020" steps="10"/>
         <br>
-       <span>1700---1800---1900</span>
+        <span>1700---1800---1900</span>
         <br>
         <br>
         <legend>* School:</legend>
@@ -46,21 +46,19 @@
             <li><label for = "Shin hanga New Prints movement, from 1915">Shin movement, from 1915</label><input type="radio" value="Shin hanga New Prints movement, from 1915" name="school" id="Shin hanga New Prints movement, from 1915" /></li>
         </ul>
         <label for="approxValue">* Approximate Value:</label><input type="text" name="approxValue" id="approxValue" size= "11" height= "6" />
-        <br />
+        <br/>
         <label for="datePrint">* Date Printed:</label><input type="date" id="datePrint" name="datePrint" />
-        <br />
+        <br/>
         <label for="dateAdded">* Date Added:</label><input type="date" name="dateAdded" id="dateAdded" />
-        <br />
+        <br/>
         <label for="recordComplete">* Record Complete?:</label><input type="checkbox" name="recordComplete" id="recordComplete" />
-        <br />
-        <br>
-        <label for="additionalComments">Comments:</label>
-        <textarea rows="4" cols="35" id="additionalComments"></textarea>
-        <br />
-    </fieldset>
+        <br/>
+        <label for="additionalComments">Comments:<textarea rows="4" cols="35" id="additionalComments"></textarea><label>
+        <br/>
+    <fieldset/>
     <input type="submit" id="submit" value="Submit"/>
-</form> <!--end of the form-->
-<br />
+</form>
+<br/>
 <script src="json.js" type="text/javascript"></script>
 <script src="main.js" type="text/javascript"></script>
 </body>
