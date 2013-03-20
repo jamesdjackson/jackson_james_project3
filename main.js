@@ -10,7 +10,6 @@ window.addEventListener("DOMContentLoaded", function () {
         return theElement;
     }
 
-
     function createOptions() {
         var formTag = document.getElementsByTagName("form");
         makeSelect = document.createElement("select");
@@ -26,7 +25,6 @@ window.addEventListener("DOMContentLoaded", function () {
         selectLi.appendChild(makeSelect);
     }
 
-
 // find value of selected radio button
     function retrieveRadioValue() {
         var radios = document.forms[0].school;
@@ -37,9 +35,7 @@ window.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-
-
-// turn links on and off
+turn links on and off
     function switchControls(n) {
         switch(n) {
             case "on":
@@ -172,7 +168,6 @@ window.addEventListener("DOMContentLoaded", function () {
         $("approxDateOfPrint").value = item.approxDateOfPrint[1];
         $("recordCompleteValue").value = item.recordComplete[1];
 
-
         var radios = document.forms[0].school;
         for (i = 0; i < radios.length; i++){
             if (radios[i].value == "Kaigetsudō school, from 1700–14" && item.school[1] == "Kaigetsudō school, from 1700–14") {
@@ -195,9 +190,6 @@ window.addEventListener("DOMContentLoaded", function () {
         $("datePrint").value = item.datePrint[1];
         $("dateAdded").value = item.dateAdded[1];
         $("additionalComments").value = item.additionalComments[1];
-
-
-
         save.removeEventListener("click", storeData);
         // change Submit button value to say edit
         $("submit").value = "Edit Contact";
@@ -237,8 +229,6 @@ window.addEventListener("DOMContentLoaded", function () {
         var getdatePrint = $("datePrint");
         var getdateAdded = $("dateAdded");
         var recordComplete = $("recordComplete");
-
-
         var messageAry = [];
         if (getGroup.value === "--Choose One--") {
             var groupError = "Please select a Japanese print artist.";
@@ -289,9 +279,6 @@ window.addEventListener("DOMContentLoaded", function () {
         }
 
     }
-
-
-
 
 // variable for drop down
     var printGroups = ["--Choose One--", "Hokusai", "Yoshitoshi", "Kuniyoshi"],
